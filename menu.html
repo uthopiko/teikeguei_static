@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Teike - Restuarante en</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display">
+    <style>
+        body {
+            font-family: 'Red Hat Display', serif;
+            font-size: medium;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            position: fixed;
+            top: 0;
+            width: 95%;
+            justify-content: flex-end;
+            padding: 1rem;
+            border-bottom: 1px dotted #d7421f;
+            background-color: white;
+
+        }
+
+
+        nav a {
+            font-size: 1.5rem;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            color: black;
+            width: 300px;
+        }
+
+        nav a:hover {
+            color: #d7421f;
+            border-right: 1px solid #d7421f;
+            border-left: 1px solid #d7421f;
+            font-weight: bold;
+        }
+
+        .logo {
+            flex: 1;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        main {
+            margin-top: 200px;
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1.2rem;
+        }
+
+        .img_parrafo_1 {
+            float: left;
+            padding: 4rem;
+        }
+
+        .img_parrafo_2 {
+            float: right;
+            padding: 4rem;
+        }
+
+        .teike_name {
+            color: #d7421f;
+            font-weight: bold;
+        }
+
+        .menu_degustacion_title {
+            font-size: 2rem;
+            font-weight: 50;
+            color: #d7421f;
+        }
+
+        .menu_degustacion_subtitle {
+            font-size: 1.5rem;
+            font-weight: 50;
+            color: #d7421f;
+        }
+
+
+        .carta_content {
+            text-align: center;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><img src="logo.png" width="217" height="86" alt="Logo Teike"></div>
+        <div class="menu">
+            <a href="index.html">¿Quienes somos?</a>
+            <a href="menu.html">Menu Degustación</a>
+            <a href="carta.html">A la carta</a>
+        </div>
+    </nav>
+    <main class="carta_content">
+        <div class="menu_degustacion_title">MENÚ DEGUSTACIÓN</div>
+        <div class="menu_degustacion_subtitle">(BAJO RESERVA)</div>
+        <p>Aperitivo</p>
+        <p>Taco de tartar de atún rojo con yema curada + Teikito</p>
+        <p>(1) Crema de chirivia con vieiray botarga</p>
+        <p>(2) Tortilla de patata ahumada con trufa negra y cremoso de foie</p>
+        <p>(3) Raices de Balmaseda</p>
+        <p>(4) Falso rissotto de Carabinero</p>
+        <p>(5) Lubina asada con pil pil de sus espinas</p>
+        <p>(6) Cochinillo confitado con crema de calabaza asada y su jugo reducido a la miel</p>
+        <p>(7) Torrija de brioche</p>
+        <p></p>
+        <p>Menú corto 5 pases: 35 €</p>
+        <p>Menú largo 7 pases: 45 €</p>
+        <p>El menú degustación incluye agua, pan y cafe</p>
+        <p>El menú degustación se sirve mesa completa</p>
+    </main>
+</body>
+
+</html>
