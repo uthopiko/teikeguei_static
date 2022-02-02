@@ -18,6 +18,7 @@ nav {
     padding: 1rem;
     border-bottom: 1px dotted #d7421f;
     background-color: white;
+    border-top: 10px solid #d7421f;
 
 }
 
@@ -74,21 +75,15 @@ main {
 }
 
 .menu_degustacion_title {
-    font-size: 2rem;
+    font-size: 8rem;
     font-weight: 50;
-    color: #d7421f;
 }
 
 .menu_degustacion_subtitle {
     font-size: 1.5rem;
     font-weight: 50;
-    color: #d7421f;
 }
 
-
-.carta_content {
-    text-align: center;
-}
 
 .burger_title {
     font-weight: bolder;
@@ -97,10 +92,27 @@ main {
 .responsive_menu {
     display: none;
     flex: 1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
-.menu-responsive-icon {
-    font-size: large;
+.menu_responsive {
+    background-color: black;
+    color: white;
+    padding: 1.4rem 2rem 1.4rem 2rem;
+    border-radius: 40px;
+    font-size: 1.5rem;
+}
+
+.menu_responsive img {
+    padding-left: 15px;
+}
+
+.menu_number {
+    color: #d7421f;
+    padding-right: 2%;
+    font-weight: bold;
 }
 
 @media (max-width: 1110px) {
@@ -110,5 +122,41 @@ main {
 
     .menu {
         display: none
+    }
+
+    .menu_degustacion_title {
+        font-size: 6rem;
+        font-weight: 50;
+        text-align: left;
+    }
+
+    .menu_degustacion_subtitle {
+        font-size: 1.5rem;
+        font-weight: 50;
+        text-align: left;
+    }
+
+    .menu_degustacion_subtitle:after {
+        display:block;
+        content:" ";
+        width: 80px;
+        height: 5px;
+        background: #d7421f;
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    .last_menu_item:after {
+        display:block;
+        content:" ";
+        width: 80px;
+        height: 5px;
+        background: #d7421f;
+        margin-top: 20px;
+        margin-bottom: 100px;
+     }
+
+    .separator {
+        color: #d7421f;
     }
 }
