@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 
-nav {
+.desktop_nav {
     display: flex;
     position: fixed;
     top: 0;
@@ -19,16 +19,30 @@ nav {
     border-bottom: 1px dotted #d7421f;
     background-color: white;
     border-top: 10px solid #d7421f;
-
 }
 
 
-nav a {
+.desktop_nav a {
     font-size: 1.5rem;
     padding-top: 0.8rem;
     padding-bottom: 0.8rem;
     color: black;
     width: 300px;
+}
+
+.mobile_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.mobile_menu a {
+    font-size: 7rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: black;
 }
 
 nav a:hover {
@@ -43,7 +57,15 @@ nav a:hover {
     text-align: center;
 }
 
-.menu {
+.desktop_menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 3;
+    justify-content: space-evenly;
+}
+
+.mobile_menu {
     display: flex;
     align-items: center;
     text-align: center;
@@ -114,6 +136,17 @@ main {
     font-weight: bold;
 }
 
+.menu_content {
+    display: none;
+}
+
+.menu_degustacion_content {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
 
 .menu_degustacion_subtitle:after {
     display:block;
@@ -140,7 +173,7 @@ main {
         display: flex
     }
 
-    .menu {
+    .desktop_menu {
         display: none
     }
 
