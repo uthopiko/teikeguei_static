@@ -7,6 +7,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 .desktop_nav {
@@ -149,8 +150,8 @@ main {
 }
 
 .menu_degustacion_subtitle:after {
-    display:block;
-    content:" ";
+    display: block;
+    content: " ";
     width: 80px;
     height: 5px;
     background: #d7421f;
@@ -159,16 +160,51 @@ main {
 }
 
 .last_menu_item:after {
-    display:block;
-    content:" ";
+    display: block;
+    content: " ";
     width: 80px;
     height: 5px;
     background: #d7421f;
     margin-top: 20px;
     margin-bottom: 100px;
- }
+}
+
+.icon {
+    width: 20px;
+}
+
+footer {
+    display: flex;
+    background-color: white;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #d7421f;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a {
+    padding-left: 2rem;
+}
+
+footer .social_networks img {
+    padding-left: 1rem;
+} 
+
+footer div {
+    width: 100%;
+}
 
 @media (max-width: 1110px) {
+    footer {
+        flex-wrap: wrap;
+        height: 150px;
+        font-size: 2.2rem;
+    }
     .responsive_menu {
         display: flex
     }
